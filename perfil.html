@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo School - Perfil</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body data-page="perfil">
+  <div class="header">
+    <h3>Perfil</h3>
+    <p>Carteirinha digital do estudante</p>
+  </div>
+
+  <div class="container">
+    <div class="section-title">Carteirinha</div>
+
+    <!-- Frente da carteirinha -->
+    <div class="carteirinha" id="carteira">
+      <div class="row">
+        <div>
+          <h3 id="profileName" style="font-size:18px;">Estudante</h3>
+          <div class="badges">
+            <span class="badge">Status: ATIVO</span>
+            <span class="badge">Graduação</span>
+          </div>
+        </div>
+
+        <div class="avatar" title="Foto (protótipo)">LS</div>
+      </div>
+
+      <p><strong>Curso:</strong> Ciências Contabeis</p>
+
+      <div class="meta-grid">
+        <div class="meta">
+          <label>Matrícula</label>
+          <span>2025 0838 7409</span>
+        </div>
+        <div class="meta">
+          <label>Validade</label>
+          <span>Jun 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão: expandir = mostrar MAIS detalhes -->
+    <button class="botao" id="btnExpand">Expandir (ver detalhes)</button>
+
+    <!-- Detalhes (verso/infos adicionais) -->
+    <div class="details" id="cardDetails">
+      <div class="details-head">
+        <h4>Detalhes da carteirinha</h4>
+        <p>Informações adicionais para conferência e validação.</p>
+      </div>
+
+      <div class="details-body">
+        <div class="detail-list">
+          <div class="detail-item">
+            <label>Nome completo</label>
+            <span id="fullName">Igor Leonardo de Oliveira Botelho</span>
+          </div>
+          <div class="detail-item">
+            <label>Instituição</label>
+            <span>Leonardo School</span>
+          </div>
+          <div class="detail-item">
+            <label>Campus / Unidade</label>
+            <span>Unidade Recife - Afogados</span>
+          </div>
+          <div class="detail-item">
+            <label>Emissão</label>
+            <span>02/03/2026</span>
+          </div>
+        </div>
+
+        <div class="qr">
+          <img src="img/qrcode.png"
+           alt="QR Code de validação"
+           class="qr-img">
+        </div>
+      </div>
+
+      <div class="details-footer">
+        <div class="mini-code">
+          Código: <strong>LS-7409-CC-26</strong><br/>
+          Validação: <strong>Online</strong>
+        </div>
+        <div class="mini-code">
+          Suporte: <strong>(81) 9900-6967</strong>
+        </div>
+      </div>
+    </div>
+
+    <button class="botao" onclick="location.href='menu.html'">Voltar</button>
+  </div>
+
+  <div class="nav">
+    <a href="menu.html">Início</a>
+    <a href="#">Carreiras</a>
+    <a href="#">Financeiro</a>
+    <a class="active" href="perfil.html">Perfil</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo School - Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body data-page="menu">
+  <div class="header header-home">
+    <div class="header-top">
+      <div>
+        <h3 id="helloName">Olá, Estudante</h3>
+        <p>Ciências Contabeis • Unidade Recife - Afogados</p>
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-btn" title="Notificações" aria-label="Notificações">
+          <!-- bell -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 1 0-12 0v3.2c0 .5-.2 1-.6 1.4L4 17h5"/>
+            <path d="M9 17a3 3 0 0 0 6 0"/>
+          </svg>
+        </button>
+
+        <button class="icon-btn" title="Configurações" aria-label="Configurações">
+          <!-- gear -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+            <path d="M19.4 15a7.7 7.7 0 0 0 .1-2l2-1.2-2-3.4-2.3.8a8 8 0 0 0-1.7-1L15 4h-6l-.5 2.2a8 8 0 0 0-1.7 1L4.5 6.4l-2 3.4 2 1.2a7.7 7.7 0 0 0 .1 2l-2 1.2 2 3.4 2.3-.8a8 8 0 0 0 1.7 1L9 20h6l.5-2.2a8 8 0 0 0 1.7-1l2.3.8 2-3.4-2-1.2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- cartão resumo -->
+    <div class="summary-card">
+      <div class="summary-left">
+        <div class="pill">Status: <strong>ATIVO</strong></div>
+        <div class="summary-row">
+          <div class="summary-item">
+            <span class="k">Matrícula</span>
+            <span class="v">2025 0838 7409</span>
+          </div>
+          <div class="summary-item">
+            <span class="k">Carteirinha</span>
+            <span class="v">Válida até Jun/2026</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="summary-cta" href="perfil.html">
+        Ver perfil
+        <span class="chev">›</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Ações rápidas -->
+    <div class="section-title">Ações rápidas</div>
+    <div class="quick-grid">
+      <div class="quick-card" onclick="alert('Protótipo: abrir disciplinas')">
+        <div class="quick-ic">
+          <!-- book -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19a2 2 0 0 0 2 2h12"/>
+            <path d="M6 2h12a2 2 0 0 1 2 2v16H6a2 2 0 0 0-2 2V4a2 2 0 0 1 2-2z"/>
+          </svg>
+        </div>
+        <div class="quick-txt">
+          <div class="quick-title">Disciplinas</div>
+          <div class="quick-sub">Notas e faltas</div>
+        </div>
+      </div>
+
+      <div class="quick-card" onclick="alert('Protótipo: abrir calendário')">
+        <div class="quick-ic">
+          <!-- calendar -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 2v4M16 2v4"/>
+            <path d="M3 10h18"/>
+            <path d="M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
+          </svg>
+        </div>
+        <div class="quick-txt">
+          <div class="quick-title">Calendário</div>
+          <div class="quick-sub">Aulas e provas</div>
+        </div>
+      </div>
+
+      <div class="quick-card" onclick="alert('Protótipo: abrir financeiro')">
+        <div class="quick-ic">
+          <!-- credit-card -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="5" width="20" height="14" rx="2"/>
+            <path d="M2 10h20"/>
+          </svg>
+        </div>
+        <div class="quick-txt">
+          <div class="quick-title">Financeiro</div>
+          <div class="quick-sub">Boletos e acordos</div>
+        </div>
+      </div>
+
+      <div class="quick-card" onclick="location.href='perfil.html'">
+        <div class="quick-ic">
+          <!-- user -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21a8 8 0 1 0-16 0"/>
+            <circle cx="12" cy="8" r="4"/>
+          </svg>
+        </div>
+        <div class="quick-txt">
+          <div class="quick-title">Perfil</div>
+          <div class="quick-sub">Carteirinha e dados</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avisos -->
+    <div class="section-title" style="margin-top:14px;">Avisos</div>
+    <div class="notice">
+      <div class="notice-dot"></div>
+      <div class="notice-body">
+        <div class="notice-title">Rematrícula aberta</div>
+        <div class="notice-sub">Período: 15/01 a 31/01 • (protótipo)</div>
+      </div>
+      <button class="notice-btn" onclick="alert('Protótipo: ver mais')">Ver</button>
+    </div>
+
+    <!-- Próximos eventos -->
+    <div class="section-title" style="margin-top:14px;">Próximos</div>
+    <div class="list-card">
+      <div class="list-row">
+        <div class="list-ic">
+          <!-- clock -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v6l4 2"/>
+          </svg>
+        </div>
+        <div class="list-txt">
+          <div class="list-title">Aula: Estruturas de Dados</div>
+          <div class="list-sub">Hoje • 19:00 • Sala 204</div>
+        </div>
+        <div class="list-right">›</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="list-row">
+        <div class="list-ic">
+          <!-- check -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6 9 17l-5-5"/>
+          </svg>
+        </div>
+        <div class="list-txt">
+          <div class="list-title">Trabalho: POO (Entrega)</div>
+          <div class="list-sub">Em 3 dias • 23:59</div>
+        </div>
+        <div class="list-right">›</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="menu.html" class="active">Início</a>
+    <a href="#" onclick="alert('Protótipo: carreiras')">Carreiras</a>
+    <a href="#" onclick="alert('Protótipo: financeiro')">Financeiro</a>
+    <a href="perfil.html">Perfil</a>
+  </div>
+</body>
+</html>
