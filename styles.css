@@ -416,6 +416,7 @@ body{background:var(--bg);min-height:100vh;color:var(--text);}
   position:absolute;
   top:12px;
   left:12px; /* fica discreto no canto */
+  left:auto;
   border:none;
   cursor:pointer;
   font-weight:800;
@@ -460,3 +461,4 @@ body.edit-mode .editable.editing:focus{
 body.edit-mode .editable.editing[contenteditable="true"]{
   caret-color: var(--primary);
 }
+
