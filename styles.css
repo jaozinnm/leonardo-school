@@ -419,3 +419,67 @@ body{background:var(--bg);min-height:100vh;color:var(--text);}
   height: 100%;
   object-fit: contain;
 }
+
+/* ===========================
+   MODO EDIÇÃO OCULTO (PRESS & HOLD)
+   =========================== */
+
+.edit-fab{
+  position:absolute;
+  top:12px;
+  right:12px;
+  border:none;
+  cursor:pointer;
+  font-weight:800;
+  font-size:12px;
+  padding:8px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.14);
+  color:#fff;
+  border: 1px solid rgba(255,255,255,.18);
+  display:none; /* só aparece no modo edição */
+}
+
+.edit-fab-details{
+  position:absolute;
+  top:12px;
+  right:12px;
+  background: rgba(123,0,63,.10);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.details-head{
+  position: relative; /* pra ancorar o botão */
+}
+
+.carteirinha{
+  position: relative; /* pra ancorar o botão */
+}
+
+body.edit-mode .edit-fab{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.editable{
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
+body.edit-mode .editable.editing{
+  outline: 2px dashed rgba(123,0,63,.55);
+  background: rgba(123,0,63,.06);
+}
+
+body.edit-mode .editable.editing:focus{
+  outline: 2px solid rgba(123,0,63,.65);
+  background: rgba(123,0,63,.08);
+}
+
+body.edit-mode .editable.editing[contenteditable="true"]{
+  caret-color: var(--primary);
+}
+
+
