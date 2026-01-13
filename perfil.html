@@ -19,6 +19,9 @@
 
     <!-- Frente da carteirinha -->
     <div class="carteirinha" id="carteira">
+      <!-- Botão discreto (só aparece no modo edição) -->
+      <button class="edit-fab" id="editFabTop" type="button" aria-label="Editar">Editar</button>
+
       <div class="row">
         <div>
           <h3 id="profileName" style="font-size:18px;">Estudante</h3>
@@ -31,16 +34,18 @@
         <div class="avatar" title="Foto (protótipo)">LS</div>
       </div>
 
-      <p><strong>Curso:</strong> Ciências Contabeis</p>
+      <p><strong>Curso:</strong>
+        <span class="editable" data-key="curso" data-placeholder="Curso">Ciências Contabeis</span>
+      </p>
 
       <div class="meta-grid">
         <div class="meta">
           <label>Matrícula</label>
-          <span>2025 0838 7409</span>
+          <span class="editable" data-key="matricula" data-placeholder="Matrícula">2025 0838 7409</span>
         </div>
         <div class="meta">
           <label>Validade</label>
-          <span>Jun 2026</span>
+          <span class="editable" data-key="validade" data-placeholder="Validade">Jun 2026</span>
         </div>
       </div>
     </div>
@@ -53,36 +58,45 @@
       <div class="details-head">
         <h4>Detalhes da carteirinha</h4>
         <p>Informações adicionais para conferência e validação.</p>
+
+        <!-- Botão discreto (só aparece no modo edição) -->
+        <button class="edit-fab edit-fab-details" id="editFabDetails" type="button" aria-label="Editar">Editar</button>
       </div>
 
       <div class="details-body">
         <div class="detail-list">
           <div class="detail-item">
             <label>Nome completo</label>
-            <span id="fullName">Igor Leonardo de Oliveira Botelho</span>
+            <span class="editable" data-key="fullName" data-placeholder="Nome completo">Igor Leonardo de Oliveira Botelho</span>
           </div>
-           <div class="detail-item">
+
+          <div class="detail-item">
             <label>CPF</label>
-            <span id="cpf">094.595.733-55</span>
+            <span class="editable" data-key="cpf" data-placeholder="CPF">094.595.733-55</span>
           </div>
+
           <div class="detail-item">
             <label>Instituição</label>
-            <span>Leonardo School</span>
+            <span class="editable" data-key="instituicao" data-placeholder="Instituição">Leonardo School</span>
           </div>
+
           <div class="detail-item">
             <label>Campus / Unidade</label>
-            <span>Unidade Recife - Afogados</span>
+            <span class="editable" data-key="campus" data-placeholder="Campus / Unidade">Unidade Recife - Afogados</span>
           </div>
+
           <div class="detail-item">
             <label>Emissão</label>
-            <span>02/03/2026</span>
+            <span class="editable" data-key="emissao" data-placeholder="Emissão">02/03/2026</span>
           </div>
         </div>
 
         <div class="qr">
-          <img src="qrcode2.png"
-           alt="QR Code de validação"
-           class="qr-img">
+          <img
+            src="qrcode2.png"
+            alt="QR Code de validação"
+            class="qr-img"
+          />
         </div>
       </div>
 
@@ -108,6 +122,3 @@
   </div>
 </body>
 </html>
-
-
-
