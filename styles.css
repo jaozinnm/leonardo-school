@@ -409,13 +409,16 @@ body{background:var(--bg);min-height:100vh;color:var(--text);}
 .divider{height:1px;background: var(--border); margin:0 14px;}
 
 /* ===========================
-   MODO EDIÇÃO OCULTO (PRESS & HOLD) - CORRIGIDO
+   MODO EDIÇÃO OCULTO (PRESS & HOLD)
    =========================== */
+
+.carteirinha{ position: relative; }
+.details-head{ position: relative; }
 
 .edit-fab{
   position:absolute;
   top:12px;
-  left:12px; /* fica discreto no canto */
+  right:12px;   /* botão no canto direito */
   left:auto;
   border:none;
   cursor:pointer;
@@ -435,7 +438,7 @@ body{background:var(--bg);min-height:100vh;color:var(--text);}
   border: 1px solid var(--border);
 }
 
-/* só aparece quando estiver em modo edição */
+/* aparece somente quando estiver em modo edição */
 body.edit-mode .edit-fab,
 body.edit-mode .edit-fab.edit-fab-details{
   display:inline-flex;
@@ -461,4 +464,5 @@ body.edit-mode .editable.editing:focus{
 body.edit-mode .editable.editing[contenteditable="true"]{
   caret-color: var(--primary);
 }
+
 
